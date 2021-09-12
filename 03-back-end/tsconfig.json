@@ -3,7 +3,7 @@
         "module": "CommonJS",
         "declaration": true,
         "removeComments": true,
-        "target": "ES6", 
+        "target": "ES2018", 
         "sourceMap": true,
         "outDir": "./dist" 
     },
