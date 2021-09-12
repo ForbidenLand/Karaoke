@@ -2,7 +2,6 @@ import * as express from "express";
 import * as cors from "cors";
 import Config from "./config/dev";
 import * as mysql2 from "mysql2/promise";
-import * as fileUpload from 'express-fileupload';
 
 
 
@@ -21,8 +20,6 @@ const application: express.Application = express();
 
 application.use(cors());
 application.use(express.json());
-application.use(fileUpload());
-
 //SONG
 
 
