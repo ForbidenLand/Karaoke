@@ -15,7 +15,6 @@ const pool = mysql.createPool({
 const application = express();
 application.use(cors());
 application.use(express.json());
-application.use(express.static('C:\\Users\\Petar\\Desktop\\Aplikacija\\04-front-end\\Karaoke' + 'public'));
 application.post("/register", async function (req, res) {
     var _a, _b;
     let username = (_a = req.body) === null || _a === void 0 ? void 0 : _a.username;
