@@ -1,0 +1,28 @@
+{
+  "name": "piivt-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "start": "npm run build && node ./dist/main.js",
+    "start:dev": "ts-node-dev --respawn -- src/main.ts"
+  },
+  "author": "Petar Stajčić <peatr.stajcic.17@singimail.rs>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.9.0",
+    "eslint": "^7.32.0",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.8",
+    "tsc": "^2.0.3",
+    "typescript": "^4.4.2"
+  }
+}
